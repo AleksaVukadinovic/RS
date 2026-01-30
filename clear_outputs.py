@@ -1,6 +1,6 @@
 import os
 
-EXTENSIONS_TO_DELETE = {".out"}
+EXTENSIONS_TO_DELETE = {".out", ".o"}
 
 def delete_output_files(path):
     for entry in os.listdir(path):
@@ -14,6 +14,6 @@ def delete_output_files(path):
             delete_output_files(full_path)
 
 if __name__ == "__main__":
-    print("Deleting .out files...")
+    print("Deleting leftover files...")
     delete_output_files(".")
     print("Deletion successful")
