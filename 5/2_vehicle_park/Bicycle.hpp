@@ -10,3 +10,5 @@ public:
     std::string type() const override;
     Vehicle* copy() const override;
 };
+
+std::ostream& operator<<(std::ostream& out, const Bicycle& a);

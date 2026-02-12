@@ -13,3 +13,5 @@ public:
     ~VehicleWithWindows() {}
     uint8_t number_of_windows() const;
 };
+
+std::ostream& operator<<(std::ostream& out, const VehicleWithWindows& a);
